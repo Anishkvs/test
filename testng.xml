@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+	<test name="Parallel Tests Edge">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="com.saucedemo.tests.LoginTest" />
+			<class name="com.saucedemo.tests.ProductTest" />
+
+		
+		</classes>
+	</test> <!-- Test -->
+
+	<!--<test name="Parallel Tests Firefox">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			 <class name="com.pageobjects.test.SauceDemoApplication"/>
+		</classes>
+	</test> -->
+</suite> <!-- Suite -->

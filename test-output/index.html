@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Anish\eclipse-workspace\HybridFrameworkPoC2\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">26 methods,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.LoginTest" class="method navigator-link" hash-for-method="TC001_loginValidCredentials">TC001_loginValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.LoginTest" class="method navigator-link" hash-for-method="TC002_invalidCredentials">TC002_invalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.LoginTest" class="method navigator-link" hash-for-method="TC003_validUsernameInvalidPassword">TC003_validUsernameInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.LoginTest" class="method navigator-link" hash-for-method="TC004_validPasswordInvalidUsername">TC004_validPasswordInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.LoginTest" class="method navigator-link" hash-for-method="TC005_loginWithoutCredentials">TC005_loginWithoutCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC006_navigateBrowserForward">TC006_navigateBrowserForward</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC007_navigateBrowserBack">TC007_navigateBrowserBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC008_addToCart">TC008_addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC009_addToAllCart">TC009_addToAllCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC012_deSelectAddToCart">TC012_deSelectAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC013_sortAscendingOrder">TC013_sortAscendingOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC014_sortDescendingOrder">TC014_sortDescendingOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC015_sortLowToHigh">TC015_sortLowToHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC016_sortHighToLow">TC016_sortHighToLow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC017_verifyShoppingCartButton">TC017_verifyShoppingCartButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC018_verifyRemoveButton">TC018_verifyRemoveButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC019_verifyCheckoutButton">TC019_verifyCheckoutButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC020_verifyContinueShoppingButton">TC020_verifyContinueShoppingButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC021_verifyCancelButton">TC021_verifyCancelButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC022_verifyContinueButtonWithoutFirstName">TC022_verifyContinueButtonWithoutFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC023_verifyContinueButtonWithoutLastName">TC023_verifyContinueButtonWithoutLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC024_verifyContinueButtonWithoutPostalCode">TC024_verifyContinueButtonWithoutPostalCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC025_verifyContinueButtonWithAllDetails">TC025_verifyContinueButtonWithAllDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC026_verifyFinishButtonInCheckoutPage">TC026_verifyFinishButtonInCheckoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC027_verifyCancelButtonInCheckoutPage">TC027_verifyCancelButtonInCheckoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucedemo.tests.ProductTest" class="method navigator-link" hash-for-method="TC030_verifyThankYouMessageInOverviewPage">TC030_verifyThankYouMessageInOverviewPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucedemo.tests.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC006_navigateBrowserForward">
+                  </a> <!-- TC006_navigateBrowserForward -->
+                  <span class="method-name">TC006_navigateBrowserForward</span>
+                  <em>
+(Verify browser forward possibilities.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC007_navigateBrowserBack">
+                  </a> <!-- TC007_navigateBrowserBack -->
+                  <span class="method-name">TC007_navigateBrowserBack</span>
+                  <em>
+(Verify browser back possibilities.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC008_addToCart">
+                  </a> <!-- TC008_addToCart -->
+                  <span class="method-name">TC008_addToCart</span>
+                  <em>
+(Add a product to the cart.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC009_addToAllCart">
+                  </a> <!-- TC009_addToAllCart -->
+                  <span class="method-name">TC009_addToAllCart</span>
+                  <em>
+(Add all the products to the cart.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC012_deSelectAddToCart">
+                  </a> <!-- TC012_deSelectAddToCart -->
+                  <span class="method-name">TC012_deSelectAddToCart</span>
+                  <em>
+(De-select a product from the cart.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC013_sortAscendingOrder">
+                  </a> <!-- TC013_sortAscendingOrder -->
+                  <span class="method-name">TC013_sortAscendingOrder</span>
+                  <em>
+(Sort the product in ascending order.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC014_sortDescendingOrder">
+                  </a> <!-- TC014_sortDescendingOrder -->
+                  <span class="method-name">TC014_sortDescendingOrder</span>
+                  <em>
+(Sort the product in descending order.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC015_sortLowToHigh">
+                  </a> <!-- TC015_sortLowToHigh -->
+                  <span class="method-name">TC015_sortLowToHigh</span>
+                  <em>
+(Sort the product price from low to high.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC016_sortHighToLow">
+                  </a> <!-- TC016_sortHighToLow -->
+                  <span class="method-name">TC016_sortHighToLow</span>
+                  <em>
+(Sort the product price from high to low.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC017_verifyShoppingCartButton">
+                  </a> <!-- TC017_verifyShoppingCartButton -->
+                  <span class="method-name">TC017_verifyShoppingCartButton</span>
+                  <em>
+(Click on the shopping cart button in the product page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC018_verifyRemoveButton">
+                  </a> <!-- TC018_verifyRemoveButton -->
+                  <span class="method-name">TC018_verifyRemoveButton</span>
+                  <em>
+(Verify the remove button from the product page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC019_verifyCheckoutButton">
+                  </a> <!-- TC019_verifyCheckoutButton -->
+                  <span class="method-name">TC019_verifyCheckoutButton</span>
+                  <em>
+(Verify the checkout button from the cart page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC020_verifyContinueShoppingButton">
+                  </a> <!-- TC020_verifyContinueShoppingButton -->
+                  <span class="method-name">TC020_verifyContinueShoppingButton</span>
+                  <em>
+(Verify the continue shopping button in the information page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC021_verifyCancelButton">
+                  </a> <!-- TC021_verifyCancelButton -->
+                  <span class="method-name">TC021_verifyCancelButton</span>
+                  <em>
+(Verify the cancel button in the information page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC022_verifyContinueButtonWithoutFirstName">
+                  </a> <!-- TC022_verifyContinueButtonWithoutFirstName -->
+                  <span class="method-name">TC022_verifyContinueButtonWithoutFirstName</span>
+                  <em>
+(Verify clicking on the continue button without user information.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC023_verifyContinueButtonWithoutLastName">
+                  </a> <!-- TC023_verifyContinueButtonWithoutLastName -->
+                  <span class="method-name">TC023_verifyContinueButtonWithoutLastName</span>
+                  <em>
+(Verify clicking on the continue button without a last name.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC024_verifyContinueButtonWithoutPostalCode">
+                  </a> <!-- TC024_verifyContinueButtonWithoutPostalCode -->
+                  <span class="method-name">TC024_verifyContinueButtonWithoutPostalCode</span>
+                  <em>
+(Verify clicking on the continue button without a postal code.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC025_verifyContinueButtonWithAllDetails">
+                  </a> <!-- TC025_verifyContinueButtonWithAllDetails -->
+                  <span class="method-name">TC025_verifyContinueButtonWithAllDetails</span>
+                  <em>
+(Verify clicking on the continue button with all details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC026_verifyFinishButtonInCheckoutPage">
+                  </a> <!-- TC026_verifyFinishButtonInCheckoutPage -->
+                  <span class="method-name">TC026_verifyFinishButtonInCheckoutPage</span>
+                  <em>
+(Verify clicking on the finish button in the checkout page last name.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC027_verifyCancelButtonInCheckoutPage">
+                  </a> <!-- TC027_verifyCancelButtonInCheckoutPage -->
+                  <span class="method-name">TC027_verifyCancelButtonInCheckoutPage</span>
+                  <em>
+(Verify the cancel button in the checkout page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC030_verifyThankYouMessageInOverviewPage">
+                  </a> <!-- TC030_verifyThankYouMessageInOverviewPage -->
+                  <span class="method-name">TC030_verifyThankYouMessageInOverviewPage</span>
+                  <em>
+(Verify the 'Thank you' message in the overview page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucedemo.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_loginValidCredentials">
+                  </a> <!-- TC001_loginValidCredentials -->
+                  <span class="method-name">TC001_loginValidCredentials</span>
+                  <em>
+(Verify login functionality.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_invalidCredentials">
+                  </a> <!-- TC002_invalidCredentials -->
+                  <span class="method-name">TC002_invalidCredentials</span>
+                  <em>
+(Verify login functionality with invalid credentials.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_validUsernameInvalidPassword">
+                  </a> <!-- TC003_validUsernameInvalidPassword -->
+                  <span class="method-name">TC003_validUsernameInvalidPassword</span>
+                  <em>
+(Verify login functionality with a valid username and an invalid password.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC004_validPasswordInvalidUsername">
+                  </a> <!-- TC004_validPasswordInvalidUsername -->
+                  <span class="method-name">TC004_validPasswordInvalidUsername</span>
+                  <em>
+(Verify login functionality with a valid password and an invalid username.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC005_loginWithoutCredentials">
+                  </a> <!-- TC005_loginWithoutCredentials -->
+                  <span class="method-name">TC005_loginWithoutCredentials</span>
+                  <em>
+(Verify login functionality without credentials.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Anish\eclipse-workspace\HybridFrameworkPoC2\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Parallel Tests Edge&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saucedemo.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.saucedemo.tests.ProductTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Parallel Tests Edge --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Parallel Tests Edge (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(26);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC023_verifyContinueButtonWithoutLastName')
+data.setCell(0, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(0, 3, 5827);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC024_verifyContinueButtonWithoutPostalCode')
+data.setCell(1, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(1, 3, 5525);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC025_verifyContinueButtonWithAllDetails')
+data.setCell(2, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(2, 3, 5414);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC022_verifyContinueButtonWithoutFirstName')
+data.setCell(3, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(3, 3, 3439);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC002_invalidCredentials')
+data.setCell(4, 2, 'com.saucedemo.tests.LoginTest')
+data.setCell(4, 3, 3106);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC009_addToAllCart')
+data.setCell(5, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(5, 3, 2967);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC014_sortDescendingOrder')
+data.setCell(6, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(6, 3, 2960);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC018_verifyRemoveButton')
+data.setCell(7, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(7, 3, 2275);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC001_loginValidCredentials')
+data.setCell(8, 2, 'com.saucedemo.tests.LoginTest')
+data.setCell(8, 3, 2163);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC007_navigateBrowserBack')
+data.setCell(9, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(9, 3, 2027);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC006_navigateBrowserForward')
+data.setCell(10, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(10, 3, 2019);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC003_validUsernameInvalidPassword')
+data.setCell(11, 2, 'com.saucedemo.tests.LoginTest')
+data.setCell(11, 3, 1955);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC004_validPasswordInvalidUsername')
+data.setCell(12, 2, 'com.saucedemo.tests.LoginTest')
+data.setCell(12, 3, 1944);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC005_loginWithoutCredentials')
+data.setCell(13, 2, 'com.saucedemo.tests.LoginTest')
+data.setCell(13, 3, 1886);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC012_deSelectAddToCart')
+data.setCell(14, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(14, 3, 1292);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC015_sortLowToHigh')
+data.setCell(15, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(15, 3, 711);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC016_sortHighToLow')
+data.setCell(16, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(16, 3, 642);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC013_sortAscendingOrder')
+data.setCell(17, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(17, 3, 572);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC019_verifyCheckoutButton')
+data.setCell(18, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(18, 3, 369);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC017_verifyShoppingCartButton')
+data.setCell(19, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(19, 3, 369);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC026_verifyFinishButtonInCheckoutPage')
+data.setCell(20, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(20, 3, 229);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TC008_addToCart')
+data.setCell(21, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(21, 3, 229);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC020_verifyContinueShoppingButton')
+data.setCell(22, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(22, 3, 93);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TC021_verifyCancelButton')
+data.setCell(23, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(23, 3, 41);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TC027_verifyCancelButtonInCheckoutPage')
+data.setCell(24, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(24, 3, 19);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TC030_verifyThankYouMessageInOverviewPage')
+data.setCell(25, 2, 'com.saucedemo.tests.ProductTest')
+data.setCell(25, 3, 3);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucedemo.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24431 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC002_invalidCredentials</span>
+                <span class="method-start">24440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC004_validPasswordInvalidUsername</span>
+                <span class="method-start">27546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC003_validUsernameInvalidPassword</span>
+                <span class="method-start">29494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC005_loginWithoutCredentials</span>
+                <span class="method-start">31451 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC001_loginValidCredentials</span>
+                <span class="method-start">33338 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucedemo.tests.ProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">35503 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41558 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC014_sortDescendingOrder</span>
+                <span class="method-start">44143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC015_sortLowToHigh</span>
+                <span class="method-start">47103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC016_sortHighToLow</span>
+                <span class="method-start">47814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC013_sortAscendingOrder</span>
+                <span class="method-start">48463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC008_addToCart</span>
+                <span class="method-start">49037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC009_addToAllCart</span>
+                <span class="method-start">49271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC012_deSelectAddToCart</span>
+                <span class="method-start">52246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC017_verifyShoppingCartButton</span>
+                <span class="method-start">53538 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC018_verifyRemoveButton</span>
+                <span class="method-start">53907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC019_verifyCheckoutButton</span>
+                <span class="method-start">56198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC020_verifyContinueShoppingButton</span>
+                <span class="method-start">56567 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC021_verifyCancelButton</span>
+                <span class="method-start">56663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC022_verifyContinueButtonWithoutFirstName</span>
+                <span class="method-start">56709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC023_verifyContinueButtonWithoutLastName</span>
+                <span class="method-start">60148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC024_verifyContinueButtonWithoutPostalCode</span>
+                <span class="method-start">65978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC025_verifyContinueButtonWithAllDetails</span>
+                <span class="method-start">71505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC027_verifyCancelButtonInCheckoutPage</span>
+                <span class="method-start">76921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC026_verifyFinishButtonInCheckoutPage</span>
+                <span class="method-start">76942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC007_navigateBrowserBack</span>
+                <span class="method-start">77173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC006_navigateBrowserForward</span>
+                <span class="method-start">79200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC030_verifyThankYouMessageInOverviewPage</span>
+                <span class="method-start">81220 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
